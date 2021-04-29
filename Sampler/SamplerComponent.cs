@@ -82,7 +82,7 @@ namespace Sampler
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
             pManager.AddNumberParameter("Design Map", "DM", "Set of design variables", GH_ParamAccess.tree);
-            pManager.AddTextParameter("Data", "CSV?", "Data written?", GH_ParamAccess.item);
+            pManager.AddTextParameter("Data", "CSV?", "Data written? HELLO!", GH_ParamAccess.item);
         }
 
         /// <summary>

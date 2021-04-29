@@ -58,6 +58,7 @@ namespace Sampler
 
         private List<List<double>> Grid()
         {
+            // adjust number of samples to an even grid
             double nBinsOpt = Math.Pow(MyComponent.NSamples, (1 / (double)MyComponent.VarsList.Count));
             int nBins = (int)Math.Ceiling(nBinsOpt);
             int nSamplesFinal = (int)Math.Pow(nBins, MyComponent.VarsList.Count);
