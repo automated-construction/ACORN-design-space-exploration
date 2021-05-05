@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MathNet.Numerics.LinearAlgebra.Double;
-using MathNet.Numerics.LinearAlgebra;
-//using MathNet.Numerics.LinearAlgebra.Generic;
+using MathNet2.Numerics.LinearAlgebra.Double;
+using MathNet2.Numerics.LinearAlgebra;
+using MathNet2.Numerics.LinearAlgebra.Generic;
 
 namespace DSECommon
 {

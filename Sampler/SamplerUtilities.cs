@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MathNet.Numerics;
-using MathNet.Numerics.LinearAlgebra.Double;
-using MathNet.Numerics.LinearAlgebra;
+using MathNet2.Numerics;
+using MathNet2.Numerics.LinearAlgebra.Double;
+using MathNet2.Numerics.LinearAlgebra;
 using DSECommon;
-//using MathNet.Numerics.LinearAlgebra.Generic;
+using MathNet2.Numerics.LinearAlgebra.Generic;
 
 namespace Sampler
 {
@@ -64,12 +64,16 @@ namespace Sampler
             int nSamplesFinal = (int)Math.Pow(nBins, MyComponent.VarsList.Count);
 
             List<double> binValues = new List<double>();
-            double bin = (1 / (double)(nBins))/(double)2;
+            //double bin = (1 / (double)(nBins))/(double)2;
+            double bin = 0;
+            binValues.Add(bin);
 
-            for (int i = 0; i < nBins; i++)
+            for (int i = 0; i < nBins-1; i++)
             {
+                //binValues.Add(bin);
+                bin = bin + 1 / (double)(nBins-1);
                 binValues.Add(bin);
-                bin = bin + 1 / (double)(nBins);
+
             }
 
             List<List<double>> samplesList = this.PermsWithRep(binValues, MyComponent.VarsList.Count);

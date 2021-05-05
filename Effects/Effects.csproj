@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DSECommon">
-      <HintPath>..\DSECommon\obj\Release\DSECommon.dll</HintPath>
+      <HintPath>..\DSECommon\bin\Debug\DSECommon.dll</HintPath>
     </Reference>
     <Reference Include="GH_IO">
       <HintPath>..\Libraries\Grasshopper\0.9.76.0\x64\GH_IO.dll</HintPath>

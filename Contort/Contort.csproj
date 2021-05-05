@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DSECommon">
-      <HintPath>..\DSECommon\bin\Release\DSECommon.dll</HintPath>
+      <HintPath>..\DSECommon\bin\Debug\DSECommon.dll</HintPath>
     </Reference>
     <Reference Include="Grasshopper">
       <HintPath>..\Libraries\Grasshopper\0.9.76.0\x64\Grasshopper.dll</HintPath>
@@ -49,7 +49,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="RhinoCommon">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Rhinoceros 5 (64-bit)\System\RhinoCommon.dll</HintPath>
+      <HintPath>..\DSE Release Build 1.4 - Personal Use\DSE\RhinoCommon.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="GH_IO">
